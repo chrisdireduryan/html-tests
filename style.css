@@ -1,0 +1,41 @@
+* {
+  font-family: "Source Sans Pro";
+}
+
+body {
+  background-color: lavender;
+}
+
+p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #4c4e4d;
+}
+
+a {
+  color: #4f7177;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h1,
+h2,
+h3 {
+  color: #4c4e4d;
+}
+
+em::before,
+em::after {
+  content: '"';
+}
+
+p + em {
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
