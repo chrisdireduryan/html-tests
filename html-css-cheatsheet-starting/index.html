@@ -86,9 +86,35 @@
           the last child <code>p</code> of the <code>div</code> element gets
           selected. However, if the last child is the div is eg. an
           <code>footer</code> and not a <code>p</code> then nothing gets
-          selected.
+          selected. (this doesn't work on body element so the parent should
+          <em>not</em> be a body element but a <code>section</code> or
+          <code>div</code> )
+        </dd>
+        <dt>Only Child Pseudo Selector <code>strong:only-child{ }</code></dt>
+        <dd>
+          Targets the first parent which has a single child of the targeted
+          element of a patent. In this example. <code>p</code> has a single
+          <code>strong</code> element. So this <code>strong</code> element is
+          targeted.
+        </dd>
+        <dt>(n)th Child Pseudo Selector <code>p:nth-child(2){ }</code></dt>
+        <dd>
+          Targets the n'th child of the parent. If they are siblings targets the
+          nth child which matches the targeted element.
+        </dd>
+        <dt>
+          (n)th Last Child Pseudo Selector <code>p:nth-last-child(2){ }</code>
+        </dt>
+        <dd>
+          Targets the last n'th child of the parent. If they are siblings
+          targets the nth child which matches the targeted element.
         </dd>
       </dl>
+    </section>
+    <section>
+      <h2>Type Selectors</h2>
+      <dt>First of Type Selector <code>div p:first-of-type{ }</code></dt>
+      <dd>Targets first type of <code>p</code></dd>
     </section>
   </body>
 </html>
