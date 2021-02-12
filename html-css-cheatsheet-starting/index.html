@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CSS Selectors Cheat Sheet</h1>
+    <section>
+      <h2>Common Selectors</h2>
+      <dl>
+        <dt>Type Selector <code>table { }</code></dt>
+        <dd>
+          Just write the element name and the CSS selector will target all
+          elements on the page.
+        </dd>
+        <dt>Class Selector<code>.contrainer {}</code></dt>
+        <dd>Classes are selected with a dot(.) at the beginning of them.</dd>
+        <dt>ID Selector (Not recommended) <code>#content { }</code></dt>
+        <dd>
+          ID's are selected with a hashtag at the beginning. I don't personally
+          use ID's a lot to target elements.
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Descendant and Child Selectors</h2>
+      <dl>
+        <dt>Descendant Selector <code>.container p { }</code></dt>
+        <dd>
+          Selects all the descendants of a parent selector In this example, all
+          the
+          <code>p</code> elements under the <code>.container</code> class are
+          selected, even though the <code>p</code> elements are nested under
+          other elements.
+          <em>
+            Descendant selectors select <strong>all</strong> child elements of
+            its parent.
+          </em>
+        </dd>
+        <dt>Child Selector <code>.container > p { }</code></dt>
+        <dd>
+          Child selectors only select the direct child of its parent. Compared
+          to the example given above, only the direct child <code>p</code> of
+          <code>.container</code> gets targeted.
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Sibling Selectors</h2>
+      <dl>
+        <dt>Adjacent Sibling Selector <code>p + em{ }</code></dt>
+        <dd>
+          <strong>Yanındaki ilk kardeş</strong> Sibling selectors are at the
+          same hiherarcical level with the elements they are combined with. In
+          this case only the directly adjacent <code>em</code> of the
+          <code>p</code> is selected.
+        </dd>
+        <dt>Child Selector <code>.container > p { }</code></dt>
+        <dd>
+          <strong>Yanındaki tüm kardeşler</strong> Child selectors only select
+          the direct child of its parent. Compared to the example given above,
+          only the direct child <code>p</code> of <code>.container</code> gets
+          targeted.
+        </dd>
+      </dl>
+    </section>
+    <section>
+      <h2>Pseudo Selectors</h2>
+      <dl>
+        <dt>First Child Pseudo Selector <code>div p:first-child{ }</code></dt>
+        <dd>
+          Targets the first child of a patent. If the first child is not the
+          same as the targeted element, then nothing gets selected. in this
+          example the first child <code>p</code> of the <code>div</code> element
+          gets selected. However, if the first child is the div is eg. an
+          <code>h1</code> and not a <code>p</code> then nothing gets selected.
+        </dd>
+        <dt>Last Child Pseudo Selector <code>div p:last-child{ }</code></dt>
+        <dd>
+          Targets the last child of a patent. If the last child is not the same
+          as the targeted element, then nothing gets selected. in this example
+          the last child <code>p</code> of the <code>div</code> element gets
+          selected. However, if the last child is the div is eg. an
+          <code>footer</code> and not a <code>p</code> then nothing gets
+          selected.
+        </dd>
+      </dl>
+    </section>
+  </body>
+</html>
