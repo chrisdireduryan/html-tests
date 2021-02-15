@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  border: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.alert {
+  background-color: #d1e7dd;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 4px;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
