@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  width: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #9b9b9b;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  transition: font-size 0.25s ease;
+}
+
+h1 {
+  line-height: 0.85;
+  font-size: 100px;
+}
+
+h2 {
+  font-size: 60px;
+  margin-top: 10px;
+  line-height: 0.85;
+}
+
+p {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 15px;
+}
+
+input {
+  margin: 0 2% 20px 0;
+  
+}
+
+/* Global Classes */
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
+}
+
+.container::before,
+.container::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Header section classes (including photo hero) */
+
+.photo-hero {
+  background-color: #888888;
+  min-height: 700px;
+}
+
+.photo-hero h1 {
+  color: #ffffff;
+  margin: 1em 0 40px;
+}
+
+.photo-hero p {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+.photo-hero h1 span {
+  color: #333333;
+}
+
+.photo-hero-text {
+  width: 70%;
+  display: block;
+  padding: 0 20px;
+}
+
+.site-navigation {
+  margin: 0 auto;
+  max-width: 1280;
+  padding: 30px 1em;
+}
+
+.site-header-left {
+  display: inline-block;
+}
+
+.site-header-left li {
+  line-height: 0;
+}
+
+.site-header-right {
+  float: right;
+  display: inline-block;
+}
+
+.site-header-right li,
+.footer-right li {
+  display: inline;
+}
+
+.site-header-right li a {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: normal;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity 0.5s ease;
+}
+
+.button-primary {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  float: left;
+}
+
+/* Site main content classes (including photo hero) */
+
+/* Photo grid classes */
+.photo-grid {
+  margin-top: -80px;
+}
+
+.image-box {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  width: calc(33.3333% - 40px);
+  margin: 20px;
+  max-height: 450px;
+  overflow: hidden;
+  float: left;
+  display: inline-block;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+}
+
+/* Blockquote classes */
+
+.photo-blockquote {
+  background-color: #999999;
+  margin-top: -80px;
+  padding-bottom: 80px;
+}
+
+blockquote::before {
+  content: " ";
+  display: block;
+  font-family: "Playfair Display", Georgia, serif;
+  text-align: center;
+  font-size: 150px;
+  color: #ffffff;
+  line-height: 30px;
+  padding-top: 40px;
+}
+
+blockquote p {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 24px;
+  line-height: 1.4;
+  text-align: center;
+  color: #ffffff;
+}
+
+blockquote footer {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f9f9f9;
+}
+
+/* About me classes */
+.photo-about,
+.photo-contact {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.photo-about h2 {
+  color: #888888;
+  margin-bottom: 30px;
+}
+
+.photo-about p {
+  color: #888888;
+  padding: 0 20%;
+  text-align: left;
+}
+
+/* Contact me classes */
+.photo-contact {
+  background-color: #555555;
+}
+
+.photo-contact h2 {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.photo-contact p {
+  color: #ffffff;
+  text-align: left;
+  padding: 0 20%;
+}
+
+/* Contact form classes */
+.photo-contact-form {
+  padding: 0 20%;
+}
